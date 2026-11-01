@@ -8,7 +8,7 @@ const App = () => {
     <div className='bg-blue-200 h-full w-full'>
   <Router>
     <Routes>
-      <Route path='/create-post' element={<Createpost/>}/>
+      <Route path='/' element={<Createpost/>}/>
       <Route path='/myfeed' element={<FeedPost/>}/>
     </Routes>
   </Router>

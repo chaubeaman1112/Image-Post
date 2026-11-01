@@ -9,7 +9,7 @@ const FeedPost = () => {
   ]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/posts')
+    axios.get('https://image-post-5pff.onrender.com/posts')
     .then((res)=>{
       setpost(res.data.post)
     })

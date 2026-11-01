@@ -10,7 +10,7 @@ const Createpost = () => {
    e.preventDefault();
 
    const formData= new FormData(e.target)
-   axios.post("https://image-post-5pff.onrender.com/create-post",formData)
+   axios.post("https://image-post-gp45.onrender.com/create-post",formData)
    .then((res)=>{
     alert('Post Created Successfully')
    navigate('/myfeed')
@@ -36,7 +36,7 @@ const Createpost = () => {
    myformdata.append("images", image)
    myformdata.append("idea", caption)
 
-   axios.post("https://image-post-5pff.onrender.com/generate-caption",myformdata)
+   axios.post("https://image-post-gp45.onrender.com/generate-caption",myformdata)
    .then((res)=>{
     setcaption(res.data.caption)
    })

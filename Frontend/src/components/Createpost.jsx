@@ -10,7 +10,7 @@ const Createpost = () => {
    e.preventDefault();
 
    const formData= new FormData(e.target)
-   axios.post("https://image-post-gp45.onrender.com/",formData)
+   axios.post("https://image-post-gp45.onrender.com/create-post",formData)
    .then((res)=>{
     alert('Post Created Successfully')
    navigate('/myfeed')
